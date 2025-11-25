@@ -1,0 +1,50 @@
+.WhyChooseUs {
+	padding: 67px 0;
+	min-height: 100vh;
+
+	.content {
+		margin: 0 auto;
+		max-width: 600px;
+		text-align: center;
+	}
+
+	.cardHolder {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 30px;
+	}
+
+	.card {
+		width: 31.7%;
+		border: 1px solid var(--primary-color);
+		padding: 20px;
+
+		@media screen and (max-width: 1300px) {
+			width: 30%;
+		}
+
+		@media screen and (max-width: 1023px) {
+			width: 47%;
+		}
+
+		@media screen and (max-width: 767px) {
+			width: 100%;
+		}
+	}
+
+	.img {
+		margin-bottom: 30px;
+		height: 330px;
+		overflow: hidden;
+
+		@media screen and (max-width: 1023px) {
+			height: 290px;
+		}
+
+		img {
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+}

@@ -1,0 +1,28 @@
+.cta {
+	font-family: var(--bebas-font);
+	font-size: 21px;
+	text-decoration: none;
+	color: var(--primary-color);
+	text-transform: uppercase;
+	display: inline-block;
+	border: 1px solid var(--primary-color);
+	padding: 20px 40px;
+	transition: background-color 0.3s, color 0.3s ease-out;
+
+	@media screen and (max-width: 1023px) {
+		padding: 10px 30px;
+	}
+}
+
+.cta:hover {
+	color: var(--white-color);
+	background-color: var(--primary-color);
+}
+
+.ctaMargin {
+	margin-bottom: 78px;
+
+	@media screen and (max-width: 1023px) {
+		margin-bottom: 50px;
+	}
+}

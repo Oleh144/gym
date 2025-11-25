@@ -1,0 +1,10 @@
+:root {
+	--primary-color: #3441ff;
+	--secondary-color: rgba(18, 18, 18, 100%);
+	--white-color: #fff;
+	--black-color: #000;
+	--gray-color: #e2e2e2;
+
+	--bebas-font: "Bebas Neue", sans-serif;
+	--poppins-font: "Poppins", sans-serif;
+}

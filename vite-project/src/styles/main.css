@@ -1,0 +1,63 @@
+body {
+	-webkit-font-smoothing: antialiased;
+	background-color: var(--secondary-color);
+	color: var(--white-color);
+	font-family: var(--poppins-font);
+	font-weight: 400;
+	font-style: normal;
+	line-height: 1.5;
+	font-size: 16px;
+}
+
+#root {
+	overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--bebas-font);
+	font-weight: 400;
+	font-style: normal;
+	line-height: 1.1;
+	margin: 0 0 1.2rem;
+}
+
+h1 {
+	font-size: 91px;
+}
+
+h2 {
+	font-size: 38px;
+}
+
+h3 {
+	font-size: 28px;
+	margin: 0 0 0.2rem;
+}
+
+a {
+	color: var(--white-color);
+	text-decoration: underline;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+p {
+	margin: 0 0 24px;
+}
+
+.container {
+	max-width: 1274px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.blueText {
+	color: var(--primary-color);
+}
