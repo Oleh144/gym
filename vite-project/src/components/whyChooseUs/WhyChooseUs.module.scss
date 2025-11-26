@@ -9,28 +9,22 @@
 	}
 
 	.cardHolder {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-		gap: 30px;
-	}
-
-	.card {
-		width: 31.7%;
-		border: 1px solid var(--primary-color);
-		padding: 20px;
-
-		@media screen and (max-width: 1300px) {
-			width: 30%;
-		}
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 20px;
 
 		@media screen and (max-width: 1023px) {
-			width: 47%;
+			grid-template-columns: repeat(2, 1fr);
 		}
 
 		@media screen and (max-width: 767px) {
-			width: 100%;
+			grid-template-columns: repeat(1, 1fr);
 		}
+	}
+
+	.card {
+		border: 1px solid var(--primary-color);
+		padding: 20px;
 	}
 
 	.img {
@@ -38,8 +32,8 @@
 		height: 330px;
 		overflow: hidden;
 
-		@media screen and (max-width: 1023px) {
-			height: 290px;
+		@media screen and (max-width: 1300px) {
+			height: 260px;
 		}
 
 		img {

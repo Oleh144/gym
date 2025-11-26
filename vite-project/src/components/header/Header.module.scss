@@ -3,7 +3,7 @@ header {
 	z-index: 10;
 	width: 100%;
 	padding: 15px 0;
-	border-bottom: 1px solid var(--white-color);
+	// border-bottom: 1px solid var(--white-color);
 	transition: padding 0.3s, background-color 0.3s ease-out;
 
 	.container {
@@ -14,7 +14,7 @@ header {
 
 	&.scroll {
 		padding: 10px 0;
-		background-color: rgba(18, 18, 18, 80%);
+		background-color: rgba(18, 18, 18, 90%);
 	}
 }
 
