@@ -1,4 +1,4 @@
-.cta {
+.cta, button {
 	font-family: var(--bebas-font);
 	font-size: 21px;
 	text-decoration: none;
@@ -6,6 +6,7 @@
 	text-transform: uppercase;
 	display: inline-block;
 	border: 1px solid var(--primary-color);
+	background-color: transparent;
 	padding: 20px 40px;
 	transition: background-color 0.3s, color 0.3s ease-out;
 
@@ -14,7 +15,8 @@
 	}
 }
 
-.cta:hover {
+.cta:hover, button:hover {
+	cursor: pointer;
 	color: var(--white-color);
 	background-color: var(--primary-color);
 }

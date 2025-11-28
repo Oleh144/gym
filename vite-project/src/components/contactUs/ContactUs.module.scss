@@ -1,0 +1,79 @@
+.contactUs {
+    background-image: url('../../assets/images/bg-contact-us.jpg');
+    background-size: cover;
+    padding: 60px 0;
+    position: relative;
+	min-height: calc(100vh - 85px);
+    display: flex;
+	align-items: center;
+
+    &:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-color: rgba(18, 18, 18, 90%);
+		z-index: 1;
+	}
+
+    .wrapper {
+        position: relative;
+		z-index: 2;
+		display: flex;
+		justify-content: space-between;
+		gap: 40px;
+		align-items: flex-start;
+    }
+}
+
+.contactForm {
+    display: grid;
+    gap: 15px;
+
+    .box1 {
+        grid-area: A;
+    }
+    .box2 {
+        grid-area: B;
+    }
+    .box3 {
+        grid-area: C;
+    }
+    .box4 {
+        grid-area: D;
+    }
+
+    grid-template-areas:
+    "A A A A   A A B B   B B B B"
+    "C C C C   C C C C   C C C C"
+    "D D D D   D D D D   D D D D";
+
+    .message, .name, .email{
+        width: 100%;
+        outline: none;
+        background-color: transparent;
+        border: 1px solid var(--white-color);
+        color: var(--white-color);
+        padding: 5px 10px;
+        transition: box-shadow .3s ease-out;
+    }
+
+    .name, .email {
+        border-radius: 0px;
+        height: 50px;
+    
+    }
+
+    input:focus, textarea:focus{
+        border-color: var(--primary-color);
+        box-shadow: 0 0 7px var(--primary-color);
+    }
+}
+
+.errorMessage {
+    display: block;
+    color: red;
+    font-size: 14px;
+}
