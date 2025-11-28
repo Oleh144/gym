@@ -3,7 +3,6 @@ header {
 	z-index: 10;
 	width: 100%;
 	padding: 15px 0;
-	// border-bottom: 1px solid var(--white-color);
 	transition: padding 0.3s, background-color 0.3s ease-out;
 
 	.container {
@@ -40,6 +39,11 @@ header {
 	font-size: 21px;
 	display: flex;
 	gap: 40px;
+
+	@media screen and (max-width: 1023px) {
+		font-size: 18px;
+
+	}
 
 	@media screen and (max-width: 767px) {
 		flex-direction: column;

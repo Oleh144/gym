@@ -16,15 +16,16 @@
 	}
 
 	h1 {
-		font-size: 122px;
+		font-size: 98px;
 		font-weight: 400;
 		margin: 0 0 4px;
+		text-transform: uppercase;
 
 		@media screen and (max-width: 1023px) {
 			font-size: 80px;
 		}
 
-		@media screen and (max-width: 1023px) {
+		@media screen and (max-width: 767px) {
 			font-size: 50px;
 		}
 	}

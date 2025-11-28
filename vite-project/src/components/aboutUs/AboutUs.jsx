@@ -1,12 +1,13 @@
 import styles from "./AboutUs.module.scss";
+import imgAbout from "../../assets/images/img-about.jpg"
 
 function AboutUs() {
 	return (
 		<section className={styles.about}>
 			<div className="container">
-				<div className="wrapper">
-					<div className="textHolder">
-						<h1>we have a lot of experience</h1>
+				<div className={styles.wrapper}>
+					<div className={styles.textHolder}>
+						<h1>we have a lot of <span className="blueText">experience</span></h1>
 						<p>
 							In quisque nunc dictumst etiam pellentesque et. Vel
 							malesuada diam lorem tellus. Amet mauris feugiat
@@ -23,11 +24,10 @@ function AboutUs() {
 							felis eget lectus morbi. Et cursus mauris
 							condimentum pretium arcu sed dignissim.
 						</p>
-						<a className="cta" href="#">
-							About Us
-						</a>
 					</div>
-					<div className="imgHolder"></div>
+					<div className={styles.imgHolder}>
+						<img src={imgAbout} alt="" />
+					</div>
 				</div>
 			</div>
 		</section>

@@ -2,7 +2,7 @@ body {
 	-webkit-font-smoothing: antialiased;
 	background-color: var(--secondary-color);
 	color: var(--white-color);
-	font-family: var(--poppins-font);
+	font-family: var(--montserrat-font);
 	font-weight: 400;
 	font-style: normal;
 	line-height: 1.5;
@@ -19,19 +19,25 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: var(--bebas-font);
+	font-family: var(--oswald-font);
 	font-weight: 400;
 	font-style: normal;
-	line-height: 1.1;
+	line-height: 1;
 	margin: 0 0 1.2rem;
+	text-transform: capitalize;
 }
 
 h1 {
 	font-size: 91px;
+
+	@media screen and (max-width: 1023px) {
+		font-size: 50px;
+	}
 }
 
 h2 {
-	font-size: 38px;
+	font-size: 30px;
+	line-height: 1.1;
 }
 
 h3 {
