@@ -14,7 +14,7 @@ function Banner() {
 						physical exercise that focuses on strength, endurance
 						and overall fitness improvement.
 					</p>
-					<Cta>Lest join now</Cta>
+					<Cta>Приєднатись</Cta>
 					<ul className={styles.achievements}>
 						<li>
 							<span className={styles.number}>20+</span>
