@@ -8,11 +8,11 @@ import stretching from "../../assets/images/stretching.jpg";
 
 function WhyChooseUs() {
 	return (
-		<section className={styles.WhyChooseUs}>
+		<section id="1" className={styles.WhyChooseUs}>
 			<div className="container">
 				<div className={styles.content}>
 					<h1>
-						Why <span className="blueText">Choose Us</span>
+						Ми <span className="blueText">пропонуємо</span>
 					</h1>
 					<p>
 						Gym workouts offer a versatile and customisable
@@ -25,7 +25,7 @@ function WhyChooseUs() {
 						<div className={styles.img}>
 							<img src={gym} alt="" />
 						</div>
-						<h3>lorem ipsum</h3>
+						<h3>Тренажерний зал</h3>
 						<p>
 							Lorem ipsum dolor sit amet consectetur, adipisicing
 							elit. Quo, cumque!
@@ -35,7 +35,7 @@ function WhyChooseUs() {
 						<div className={styles.img}>
 							<img src={materialArt} alt="" />
 						</div>
-						<h3>lorem ipsum</h3>
+						<h3>академія бойових мистецтв</h3>
 						<p>
 							Lorem ipsum dolor sit amet consectetur, adipisicing
 							elit. Quo, cumque!
@@ -45,7 +45,7 @@ function WhyChooseUs() {
 						<div className={styles.img}>
 							<img src={acrobaticSchool} alt="" />
 						</div>
-						<h3>lorem ipsum</h3>
+						<h3>школа гімнастики та акробатики</h3>
 						<p>
 							Lorem ipsum dolor sit amet consectetur, adipisicing
 							elit. Quo, cumque!
@@ -55,7 +55,7 @@ function WhyChooseUs() {
 						<div className={styles.img}>
 							<img src={box} alt="" />
 						</div>
-						<h3>lorem ipsum</h3>
+						<h3>Бокс/КІКБОКСиНГ</h3>
 						<p>
 							Lorem ipsum dolor sit amet consectetur, adipisicing
 							elit. Quo, cumque!
@@ -65,7 +65,7 @@ function WhyChooseUs() {
 						<div className={styles.img}>
 							<img src={fitnes} alt="" />
 						</div>
-						<h3>lorem ipsum</h3>
+						<h3>ФІТНЕС</h3>
 						<p>
 							Lorem ipsum dolor sit amet consectetur, adipisicing
 							elit. Quo, cumque!
@@ -75,7 +75,7 @@ function WhyChooseUs() {
 						<div className={styles.img}>
 							<img src={stretching} alt="" />
 						</div>
-						<h3>lorem ipsum</h3>
+						<h3>СТРЕТЧІНГ</h3>
 						<p>
 							Lorem ipsum dolor sit amet consectetur, adipisicing
 							elit. Quo, cumque!

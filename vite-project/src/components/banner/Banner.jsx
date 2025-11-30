@@ -7,8 +7,7 @@ function Banner() {
 			<div className={"container" + " " + styles.container}>
 				<div className={styles.content}>
 					<h1>
-						ready TO TRAIN{" "}
-						<span className="blueText">YOUR BODY</span>
+						Ти готов <span className="blueText">ДО ТРЕНУВАНЬ?</span>
 					</h1>
 					<p className={styles.paragraph}>
 						Gym training is a structured and disciplined approach to

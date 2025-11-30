@@ -1,14 +1,19 @@
 import { Formik } from "formik";
 import styles from "./ContactUs.module.scss";
+import GGoogleMap from "../googleMap/GoogleMap.jsx";
 
 function ContactUs() {
 	return (
-		<section className={styles.contactUs}>
+		<section id="4" className={styles.contactUs}>
 			<div className="container">
 				<div className={styles.wrapper}>
-					<div className="mapHolder"></div>
-					<div className="forHolder">
-						<h1>Звязатись з нами</h1>
+					<div className={styles.mapHolder}>
+						<GGoogleMap />
+					</div>
+					<div className="formHolder">
+						<h1>
+							Написати <span className="blueText"> нам</span>
+						</h1>
 						<Formik
 							initialValues={{
 								name: "",
@@ -46,7 +51,6 @@ function ContactUs() {
 								handleBlur,
 								handleSubmit,
 								isSubmitting,
-								/* and other goodies */
 							}) => (
 								<form
 									className={styles.contactForm}

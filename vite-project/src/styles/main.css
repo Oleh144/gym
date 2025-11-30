@@ -1,3 +1,8 @@
+html {
+	scroll-behavior: smooth;
+	scroll-padding: 30px;
+}
+
 body {
 	-webkit-font-smoothing: antialiased;
 	background-color: var(--secondary-color);
@@ -59,6 +64,7 @@ p {
 }
 
 .container {
+	width: 100%;
 	max-width: 1274px;
 	margin: 0 auto;
 	padding: 0 15px;
