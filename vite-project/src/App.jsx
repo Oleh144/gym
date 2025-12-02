@@ -1,10 +1,11 @@
-import Banner from "./components/banner/Banner";
-import Header from "./components/header/Header";
-import WhyChooseUs from "./components/whyChooseUs/WhyChooseUs";
-import AboutUs from "./components/aboutUs/AboutUs";
-import Trainers from "./components/trainers/Trainers";
-import ContactUs from "./components/contactUs/ContactUs";
-import Footer from "./components/footer/Footer.jsx";
+import Banner from "./components/section/banner/Banner";
+import Header from "./components/section/header/Header";
+import WhyChooseUs from "./components/section/whyChooseUs/WhyChooseUs";
+import AboutUs from "./components/section/aboutUs/AboutUs";
+import Trainers from "./components/section/trainers/Trainers";
+import ContactUs from "./components/section/contactUs/ContactUs";
+import Footer from "./components/section/footer/Footer.jsx";
+import BackToTop from "./components/ui/backToTop/BackToTop.jsx";
 
 function App() {
 	return (
@@ -16,6 +17,7 @@ function App() {
 			<Trainers />
 			<ContactUs />
 			<Footer />
+			<BackToTop>Top</BackToTop>
 		</>
 	);
 }

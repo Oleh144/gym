@@ -16,6 +16,34 @@ body {
 
 #root {
 	overflow: hidden;
+	position: relative;
+}
+
+a {
+	text-decoration: none;
+	color: var(--white-color);
+	position: relative;
+	transition: color 0.3s ease-out;
+
+	&:before {
+		content: "";
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: -2px;
+		height: 1px;
+		background-color: var(--white-color);
+		width: 0;
+		transition: width 0.3s ease-out;
+	}
+
+	&:hover {
+		color: var(--white-color);
+
+		&:before {
+			width: 100%;
+		}
+	}
 }
 
 h1,
@@ -50,13 +78,9 @@ h3 {
 	margin: 0 0 0.2rem;
 }
 
-a {
-	color: var(--white-color);
-	text-decoration: underline;
-}
-
-a:hover {
-	text-decoration: none;
+h4 {
+	font-size: 16px;
+	margin: 0 0 1rem;
 }
 
 p {
