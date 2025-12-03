@@ -23,7 +23,7 @@ function ContactUs() {
 							validate={(values) => {
 								const errors = {};
 								if (!values.email) {
-									errors.email = "Required";
+									errors.email = "Обов'язкове поле";
 								} else if (
 									!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(
 										values.email
@@ -60,7 +60,7 @@ function ContactUs() {
 											className={styles.name}
 											type="text"
 											name="name"
-											placeholder="Name"
+											placeholder="Ваше ім'я"
 											onChange={handleChange}
 											onBlur={handleBlur}
 											value={values.name}
@@ -71,7 +71,7 @@ function ContactUs() {
 											className={styles.email}
 											type="email"
 											name="email"
-											placeholder="email"
+											placeholder="Ваш email"
 											onChange={handleChange}
 											onBlur={handleBlur}
 											value={values.email}
@@ -88,7 +88,7 @@ function ContactUs() {
 											className={styles.message}
 											name="message"
 											id="message"
-											placeholder="message"
+											placeholder="Ваше повідомлення"
 											rows="10"
 											onChange={handleChange}
 											onBlur={handleBlur}
@@ -96,7 +96,7 @@ function ContactUs() {
 										{errors.message && touched.message && (
 											<span
 												className={styles.errorMessage}>
-												Nothing to send
+												Нема шо відправляти
 											</span>
 										)}
 									</div>
@@ -105,7 +105,7 @@ function ContactUs() {
 										className={styles.box4}
 										type="submit"
 										disabled={isSubmitting}>
-										Submit
+										Надіслати
 									</button>
 								</form>
 							)}

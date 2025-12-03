@@ -8,8 +8,8 @@ function AboutUs() {
 				<div className={styles.wrapper}>
 					<div className={styles.textHolder}>
 						<h1>
-							ласкаво запрошуємо до{" "}
-							<span className="blueText">Sport time</span>
+							чому саме{" "}
+							<span className="blueText">Sport&nbsp;time</span>
 						</h1>
 						<p>
 							«Sport Time» – твій спортклуб у самому центрі міста.
