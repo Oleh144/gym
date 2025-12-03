@@ -5,7 +5,6 @@ import AboutUs from "./components/section/aboutUs/AboutUs";
 import Trainers from "./components/section/trainers/Trainers";
 import ContactUs from "./components/section/contactUs/ContactUs";
 import Footer from "./components/section/footer/Footer.jsx";
-import BackToTop from "./components/ui/backToTop/BackToTop.jsx";
 
 function App() {
 	return (
@@ -17,7 +16,6 @@ function App() {
 			<Trainers />
 			<ContactUs />
 			<Footer />
-			<BackToTop>Top</BackToTop>
 		</>
 	);
 }

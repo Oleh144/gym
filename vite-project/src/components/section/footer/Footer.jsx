@@ -5,12 +5,14 @@ import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import YouTubeIcon from "@mui/icons-material/YouTube";
+import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
 
 import FooterNav from "../../ui/footerNav/FooterNav.jsx";
 
 import images from "../../../assets/images/logo-02.png";
 
 import styles from "./Footer.module.scss";
+import BackToTop from "../../ui/backToTop/BackToTop.jsx";
 
 function Footer() {
 	return (
@@ -18,9 +20,14 @@ function Footer() {
 			<div className={styles.topFooter}>
 				<div className={"container" + " " + styles.holder}>
 					<div className={styles.logo}>
-						<img src={images} alt="" />
+						<a href="#top">
+							<img src={images} alt="" />
+						</a>
 					</div>
-					<FooterNav />
+					<div className={styles.navHolder}>
+						<h4>Навігація</h4>
+						<FooterNav />
+					</div>
 					<div className="scheduleHolder">
 						<h4>Розклад Роботи</h4>
 						<ul className={styles.schedule}>
@@ -69,7 +76,7 @@ function Footer() {
 									sport.time.club.kh@gmail.com
 								</a>
 							</li>
-							<li>
+							<li className={styles.socialLink}>
 								<a href="#">
 									<FacebookIcon />
 								</a>
@@ -87,6 +94,9 @@ function Footer() {
 			<div className={styles.bottomFooter}>
 				<p>Ⓒ 2025 All rights reserved. Sport Time</p>
 			</div>
+			<BackToTop>
+				<ArrowUpwardIcon />
+			</BackToTop>
 		</footer>
 	);
 }

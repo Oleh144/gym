@@ -20,29 +20,10 @@ body {
 }
 
 a {
-	text-decoration: none;
-	color: var(--white-color);
-	position: relative;
-	transition: color 0.3s ease-out;
-
-	&:before {
-		content: "";
-		position: absolute;
-		left: 0;
-		right: 0;
-		bottom: -2px;
-		height: 1px;
-		background-color: var(--white-color);
-		width: 0;
-		transition: width 0.3s ease-out;
-	}
+	text-decoration: underline;
 
 	&:hover {
-		color: var(--white-color);
-
-		&:before {
-			width: 100%;
-		}
+		text-decoration: none;
 	}
 }
 
