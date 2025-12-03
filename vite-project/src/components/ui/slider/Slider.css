@@ -17,7 +17,7 @@
 		position: relative;
 		height: 350px;
 		overflow: hidden;
-		margin-bottom: 45px;
+		margin-bottom: 65px;
 
 		&:hover .description {
 			top: 0;
@@ -35,11 +35,34 @@
 	}
 
 	.swiper-pagination-bullet {
-		background-color: var(--white-color);
+		/* background-color: var(--white-color); */
+		opacity: 1;
+		position: relative;
+		border: 1px solid var(--white-color);
+		width: 20px;
+		height: 20px;
+		margin: 0 10px !important;
+
+		&:before {
+			content: "";
+			position: absolute;
+			top: 6px;
+			right: 6px;
+			bottom: 6px;
+			left: 6px;
+			border-radius: 50%;
+			background-color: rgba(255, 255, 255, 70%);
+		}
 	}
 
 	.swiper-pagination-bullet-active {
-		background-color: var(--primary-color);
+		/* background-color: var(--primary-color); */
+		border: 1px solid var(--primary-color);
+		background-color: transparent;
+
+		&:before {
+			background-color: var(--primary-color);
+		}
 	}
 
 	.description {
